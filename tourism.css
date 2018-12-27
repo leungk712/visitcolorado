@@ -1,0 +1,131 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Crimson Text', serif;
+  text-align: center;
+  background-color: #9FB6B9;
+  overflow-x: hidden;
+  color: black;
+}
+
+nav, nav a {
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background: #EEE;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+.carousel img {
+  height: 75vh;
+  width: 100vw;
+  object-fit: cover;
+  object-position: center center;
+}
+
+#intro p, footer, label {
+  font-size: 1.5rem;
+}
+
+form {
+  background: #679186;
+}
+
+#hidden {
+  visibility: hidden;
+}
+
+.btn-always-col {
+  width: 100%;
+  height: 4.40vh;
+  background: #2a6171;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25rem;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #f1c550;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .carousel img {
+    height: 60vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center center;
+  }
+  
+  nav, nav a {
+    font-size: 1.30rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .carousel img {
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center center;
+  }
+  
+  nav, nav a {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .carousel img {
+    height: 40vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+
+
+/* ICONS */
+
+/*.fas {*/
+/*  font-size: 5rem;*/
+/*  margin-bottom: 10px;*/
+/*}*/
+
+/*.fa-mountain {*/
+/*  color: #566D8F;*/
+/*}*/
+
+/*.fa-campground {*/
+/*  color: #936037;*/
+/*}*/
+
+/*.fa-utensils {*/
+/*  color: #808080;*/
+/*}*/
+
+/*#icons {*/
+/*  padding-top: 30px;*/
+/*}*/
+
+/*#icons p {*/
+/*  font-size: 2.5rem;*/
+/*}*/
