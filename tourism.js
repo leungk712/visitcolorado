@@ -1,6 +1,6 @@
 let city = "Denver";
 
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=77f723cc9f64af8673e89f7e850f6a97",
+$.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=77f723cc9f64af8673e89f7e850f6a97",
   function(data){
     console.log(data);
   
