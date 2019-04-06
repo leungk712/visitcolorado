@@ -16,12 +16,18 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
+    <!-- Javascript -->
+    <script src="tourism.js"></script>
 
     <title>Visit Colorado</title>
   </head>
   
   <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-danger">
+    <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-danger">
       <a class="navbar-brand" href="#"><img src="coloradoC.jpg"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,15 +70,15 @@
       </div>
     </nav>
     
-    <div id="mainContainer" class="container-fluid p-0 m-0">
+    <div class="container-fluid p-0 m-0">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              <ul class="carousel-indicators">
-                <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleControls" data-slide-to="1"></li>
-                <li data-target="#carouselExampleControls" data-slide-to="2"></li>
-                <li data-target="#carouselExampleControls" data-slide-to="3"></li>
-                <li data-target="#carouselExampleControls" data-slide-to="4"></li>
-              </ul>
+            <ul class="carousel-indicators">
+              <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+              <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+              <li data-target="#carouselExampleControls" data-slide-to="3"></li>
+              <li data-target="#carouselExampleControls" data-slide-to="4"></li>
+            </ul>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="d-inline img-fluid" src="mike-scheid-639977-unsplash.jpg" alt="First slide">
@@ -99,46 +105,66 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-    
-      <div id="intro" class="my-5">
-          <div class="row justify-content-center">
-            <div class="col-10">
-              <p>From the fall colors to the snowy peaks of the Rocky Mountains, Colorado offers an endless amount of arts and entertainment, nature, and a chance to explore. Millions of visitors come to our beautiful state every year to bask in 300 days of sunshine, hike 14ers, and take part in the many festivals. Whether you're in the heart of downtown Denver or on the top of Pikes Peak, we are confident you will have the time of your life. Come, let's explore.</p>
-            </div>
+      </div>
+     
+      <div class="weather-container container pt-1">
+        <div class="row">
+          <div class="col-sm-12">
+            <span>Current weather in</span>
+            <span class="weather-city"></span> is
+            <span class="weather-temperature-f"></span>&#176; F /
+            <span class="weather-temperature-c"></span>&#176; C
+            <span>
+              <img class="weather-icon"><span class="weather-description"></span>
+            </span>
           </div>
+        </div>
+      </div>
+    
+      <div id="intro" class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <p>From the fall colors to the snowy peaks of the Rocky Mountains, Colorado offers an endless amount of arts 
+              and entertainment, nature, and a chance to explore. Millions of visitors come to our beautiful state every 
+              year to bask in 300 days of sunshine, hike 14ers, and take part in the many festivals. Whether you're in the 
+              heart of downtown Denver or on the top of Pikes Peak, we are confident you will have the time of your life. 
+              Come, let's explore.</p>
+          </div>
+        </div>
       </div>
       
-      <form class="container-fluid py-3 m-0">
-        <h2 class="py-3">Want to sign up for our free monthly newsletter?</h2>
+      <form class="container py-2 mx-auto">
+        <h2 class="py-3">Sign up for our free monthly newsletter!</h2>
           <div class="form-row">
             <div class="form-group col-md-3">
-              <label for="#">First Name:</label>
               <input type="text" class="form-control" placeholder="First name">
             </div>
             <div class="form-group col-md-3">
-              <label for="#">Last Name:</label>
               <input type="text" class="form-control" placeholder="Last name">
             </div>
             <div class="form-group col-md-3">
-              <label for="#">Email:</label>
                 <input type="email" class="form-control" placeholder="Email" required>
             </div>
             <div class="col-md-3">
-              <label id="hidden" type="text">Hidden</label>
-              <button type="submit" class="btn-md btn-always-col">Submit!</button>
+              <button type="submit" class="btn-md btn-submit btn-block btn-secondary mb-2">Submit!</button>
             </div>
           </div>
+        <a class="btn-top" href="#navbar"><i class="fas fa-angle-double-up"></i> Back to the top</a>
       </form>
     
-      <footer class="bg-danger text-dark sticky-bottom p-2 m-0">
+      <footer class="bg-danger sticky-bottom p-2">
           <div class="row justify-content-center">
             <div class="col-10">
-              <p>Visit us at <a href="https://www.colorado.gov/"> www.colorado.gov</a></p>
-              <h4>&copy; State of Colorado 2019</h4>
+              <h4>Visit us at <a href="https://www.colorado.gov/"> www.colorado.gov</a></h4>
+                <a class="footer-link" href="#">Things to do</a>
+                <a class="footer-link" href="#">Festivals & Events</a>
+                <a class="footer-link" href="#">Trip Ideas</a>
+                <a class="footer-link" href="#">Explore Cities</a>
+                <a class="footer-link" href="#">Contact</a>
+              <h4>&copy; State of Colorado 2019 <i class="fas fa-mountain"></i></h4>
             </div>
           </div>
       </footer>
-    </div>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
