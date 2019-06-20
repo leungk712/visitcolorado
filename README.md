@@ -1,4 +1,5 @@
-# visitcolorado (Link for complete project https://leungk712.github.io/visitcolorado/)
+# [visitcolorado] (https://leungk712.github.io/visitcolorado/)
+
 State of Colorado website utilizing HTML, CSS, Javascript, jQuery, API
 
 Hello! Welcome to the State of Colorado tourism website. This is an active project that I am currently still working on. 
